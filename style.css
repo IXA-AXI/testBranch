@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f1fff1; /* สีเขียวอ่อน */
+  margin: 0;
+}
+
+.calculator {
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.calculator input {
+  width: 100%;
+  height: 50px;
+  font-size: 24px;
+  text-align: right;
+  padding: 5px;
+  margin-bottom: 15px;
+  border: 1px solid #a2d5a2;
+  border-radius: 5px;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* แบ่งเป็น 4 คอลัมน์เท่าๆ กัน */
+  grid-gap: 10px; /* เว้นระยะห่างระหว่างปุ่ม */
+}
+
+button {
+  height: 50px;
+  font-size: 20px;
+  cursor: pointer;
+  background-color: #e6f7e6; /* สีเขียวพาสเทล */
+  border: 1px solid #c3e6c3;
+  border-radius: 5px;
+  color: #2d6a2d;
+}
+
+button:hover {
+  background-color: #d0ecd0; /* สีเขียวเข้มขึ้นเมื่อ hover */
+}
+
+button.clear {
+  background-color: #ffbdbd; /* สีแดงอ่อน */
+  color: #8e2d2d;
+}
+
+button.clear:hover {
+  background-color: #ffa1a1;
+}
+
+button.operator {
+  background-color: #b8e0b8; /* สีเขียวพิเศษสำหรับปุ่ม operator */
+  color: #2d6a2d;
+}
+
+button.equal {
+  background-color: #a2d5a2;
+  color: white;
+}
+
+button.equal:hover {
+  background-color: #8bc48b;
+}
